@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Innovation Station Blog</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='/stylesheet/style.css') }}">
+</head>
+<body>
+  <!-------- Header Section --------------->
+<div class="header">
+  <h1>Innovation Station Blog</h1>
+  <p>Unleashing Creativity</p>
+</div>
+  <nav class="navbar">
+    <div class="logo">Logo</div>
+    <ul class="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="{{ url_for('signIn') }}">Sign In</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <!-------------- Body Section --------->
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Discover the Power of Blogging</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg"><img src="static/Img/speakers.jpg"></div>
+      <h4>Discover the power of Innovation Blog</h4>
+      <p>Blogging has revolutionized the way individuals communicate and share information. According to a study by HubSpot, businesses that maintain an active blog generate 67% more leads than those that don't. This highlights the immense potential of blogging as a tool for personal and professional growth. Consider the case of Jane, a passionate food enthusiast who started a recipe blog. Through her blog, she shared her love for cooking, documented her culinary adventures, and provided step-by-step guides for mouthwatering recipes. Within a few months, Jane's blog gained traction, attracting a loyal readership and even catching the attention of a cookbook publisher. Her blog not only provided a platform for her creative expression but also opened doors for exciting opportunities.Blogging has revolutionized the way individuals communicate and share information. According to a study by HubSpot, businesses that maintain an active blog generate 67% more leads than those that don't. This highlights the immense potential of blogging as a tool for personal and professional growth. Consider the case of Jane, a passionate food enthusiast who started a recipe blog. Through her blog, she shared her love for cooking, documented her culinary adventures, and provided step-by-step guides for mouthwatering recipes. Within a few months, Jane's blog gained traction, attracting a loyal readership and even catching the attention of a cookbook publisher. Her blog not only provided a platform for her creative expression but also opened doors for exciting opportunities..</p>
+    </div>
+    <div class="card">
+      <h2>Seamless User Experience</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg"><img src="static/Img/venue.jpg"></div>
+      <h4>Seamless User Experience</h4>
+      <p>Creating an account on the Innovation Station Blog is a breeze. Our user-friendly registration process ensures a smooth onboarding experience, allowing you to quickly set up your profile and start crafting your blog posts. Once you're in, you'll find a dashboard that provides easy access to all the essential features, such as post creation, editing, and management.
+      Navigating through the Innovation Station Blog is a seamless experience for both bloggers and readers. The intuitive dashboard allows bloggers to easily access their posts, monitor analytics, and manage their blog settings. The clean and clutter-free interface ensures that users can focus on crafting compelling content without unnecessary distractions.</br> Consider Sarah, a fashion blogger who appreciates simplicity and efficiency. Sarah found the Innovation Station Blog's user interface to be intuitive and user-friendly. The straightforward navigation allowed her to effortlessly create and edit her fashion articles, saving her time and enabling her to focus on producing high-quality content that resonated with her readers.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg"><img src="static/Img/brad-smith.jpg" width="50px"></div>
+      <p>Emezi Uchechi David is a passionate writer, blogger, and technology enthusiast. With a deep love for words and a curiosity that knows no bounds, Uchechi has been exploring various topics and sharing his insights through his writing. His areas of expertise include technology, innovation, and personal development. Through his blog posts, Uchechi aims to inspire and empower readers to embrace their passions, unleash their creativity, and pursue a life of purpose. With a keen interest in the latest trends and advancements in the tech world, he keeps his finger on the pulse of innovation and shares his findings with his readers. When he's not writing, you can find John experimenting with new gadgets, exploring nature trails, or engrossed in a good book. He believes in the power of continuous learning and personal growth, and strives to inspire others to embark on their own journey of self-discovery.</p>
+    </div>
+    <div class="card popular-tags">
+      <h3>Popular Post</h3>
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Programming</a></li>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">Artificial Intelligence</a></li>
+        <li><a href="#">Data Science</a></li>
+    </ul>
+</div>
+    <div class="card follow-me">
+      <h3>Follow Me</h3>  
+      <ul>
+        <li><a href="https://www.facebook.com/uchechi.d"><img src="assest/Img/icon/Facebook.png"></a></li>
+        <li><a href="#"><img src="static/Img/icon/Twitter.png"></a></li>
+        <li><a href="#"><img src="static/Img/icon/Instagram.png"></a></li>
+        <li><a href="#"><img src="static/Img/icon/likedin.png"></a></li>
+          <li><a href="#"><img src="static/Img/icon/WhatsApp.png"></a></li>
+            <li><a href="https://github.com/uciboy14"><img src="static/Img/icon/GitHub.png"></a></li>
+    </ul>
+</div>
+
+<!------------ Comment Section ------------>
+  <div class="comments-container">
+    <h2>Comments</h2>
+    <ul class="comments-list">
+      <li>
+        <div class="comment">
+          <div class="comment-avatar">
+            <img src="avatar1.jpg" alt="User Avatar">
+          </div>
+          <div class="comment-content">
+            <h3 class="comment-author">John Doe</h3>
+            <p class="comment-text">Gathering data from comments section</p>
+            <span class="comment-date">Posted on May 15, 2023</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="comment">
+          <div class="comment-avatar">
+            <img src="avatar2.jpg" alt="User Avatar">
+          </div>
+          <div class="comment-content">
+            <h3 class="comment-author">Jane Smith</h3>
+            <p class="comment-text">How're you doing today?</p>
+            <span class="comment-date">Posted on May 16, 2023</span>
+          </div>
+        </div>
+      </li>
+      <!-- Add more comments here -->
+    </ul>
+    <form class="comment-form">
+      <h3>Add a Comment</h3>
+      <input type="text" name="name" placeholder="Your Name">
+      <textarea name="comment" placeholder="Your Comment"></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+  </div>
+  <!------- End comment section ------>
+    </div>
+  </div>
+</div>
+  
+<!----------- Footer Section ------------>
+<footer>
+   <div class="footer-container">
+    <p>© 2023 Innovation Station Blog. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
+
+

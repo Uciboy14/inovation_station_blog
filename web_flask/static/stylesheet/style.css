@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #f1f1f1;
+}
+
+p {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+
+}
+/*
+   ===============
+   Header
+   ===============
+*/
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+/*Popular Tags Styles */
+
+.popular-tags {
+    margin-bottom: 30px;
+}
+
+.popular-tags h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.popular-tags ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popular-tags li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.popular-tags a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.popular-tags a:hover {
+    background-color: #ccc;
+}
+.leftcolumn {   
+  float: left;
+  width: 60%;
+}
+
+/* Follow Me Styles */
+
+.follow-me {
+    margin-bottom: 20px;
+}
+
+.follow-me h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.follow-me ul {
+    list-style: none;
+    padding: 0;
+}
+
+.follow-me li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.follow-me a {
+    display: inline-block;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.follow-me a:hover {
+    background-color: #fff;
+}
+
+
+img {
+  width: 100%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 40%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+.follow-me a {
+  background: #fff;
+}
+
+.fakeimg {
+  padding: 5px;
+}
+
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.social a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*
+ ===============
+ comment
+ ================
+*/
+
+.comments-container {
+  max-width: 600px;
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.comments-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.comment-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-content {
+  margin-left: 10px;
+}
+
+.comment-author {
+  margin: 0;
+  font-weight: bold;
+}
+
+.comment-date {
+  font-size: 12px;
+  color: #888;
+}
+
+.comment-text {
+  margin: 5px 0;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.comment-form button {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #555;
+}
+ 
+/*
+  ================
+  footer
+  ================
+*/
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  
+}
